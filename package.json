@@ -1,0 +1,53 @@
+{
+  "name": "stage-lyrics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "build:single": "vite build --mode single",
+    "build:mhtml": "npm run build:single && node scripts/mhtml.mjs",
+    "build:exe": "npm run build && powershell -NoProfile -ExecutionPolicy Bypass -File scripts/create-splash.ps1 && electron-builder --win portable --x64 && electron-builder --win portable --ia32 && node scripts/clean-staging.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "verify:offline": "node scripts/verify-offline.mjs"
+  },
+  "dependencies": {
+    "@applemusic-like-lyrics/react": "^0.6.0",
+    "@fontsource-variable/google-sans-flex": "^5.3.2",
+    "@material/material-color-utilities": "0.3.0",
+    "marked": "^12.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "22.3.27",
+    "electron-builder": "^24.13.3",
+    "playwright-core": "^1.52.0",
+    "vite": "^5.4.21",
+    "vite-plugin-singlefile": "^2.1.0"
+  },
+  "main": "electron/main.cjs",
+  "build": {
+    "appId": "local.stage.lyrics",
+    "productName": "Stage Lyrics",
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "portable": {
+      "splashImage": "build/startup.bmp",
+      "unpackDirName": true,
+      "useZip": true
+    },
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false
+    },
+    "directories": {
+      "output": "release"
+    },
+    "artifactName": "Stage-Lyrics-${version}-${arch}.${ext}"
+  }
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "term": "on a platter",
+    "meaning": "唾手可得；轻易呈到面前",
+    "match": "platter",
+    "partOfSpeech": "phr.",
+    "otherMeaning": "直译：放在盘子里"
+  },
+  {
+    "term": "pull back",
+    "meaning": "退缩；在关系中抽离",
+    "match": "pull back",
+    "partOfSpeech": "v. phr.",
+    "otherMeaning": "后退；撤回"
+  },
+  {
+    "term": "in advance",
+    "meaning": "提前；预先",
+    "match": "in advance",
+    "partOfSpeech": "adv. phr.",
+    "otherMeaning": "预先付款或准备"
+  },
+  {
+    "term": "slam the door",
+    "meaning": "砰地关上门",
+    "match": "slam the door",
+    "partOfSpeech": "v. phr.",
+    "otherMeaning": "slam 还可指：猛摔；猛烈抨击"
+  },
+  {
+    "term": "block",
+    "meaning": "拉黑，屏蔽某人的联系",
+    "match": "blocked",
+    "partOfSpeech": "v.",
+    "otherMeaning": "也可作名词：街区；障碍物"
+  },
+  {
+    "term": "afterthought",
+    "meaning": "事后才想到的念头；重新考虑",
+    "match": "after thought",
+    "partOfSpeech": "n.",
+    "otherMeaning": "事后添加的东西"
+  },
+  {
+    "term": "cut someone off",
+    "meaning": "与某人断绝联系",
+    "match": "cut you off",
+    "partOfSpeech": "v. phr.",
+    "otherMeaning": "打断某人；切断供应"
+  },
+  {
+    "term": "feather",
+    "meaning": "羽毛；比喻轻盈",
+    "match": "feather",
+    "partOfSpeech": "n.",
+    "otherMeaning": "翎毛；羽状物"
+  },
+  {
+    "term": "off my mind",
+    "meaning": "不再挂念；抛在脑后",
+    "match": "off my mind",
+    "partOfSpeech": "phr.",
+    "otherMeaning": "on my mind 则表示：心中挂念着"
+  },
+  {
+    "term": "float",
+    "meaning": "漂浮；轻轻飘动",
+    "match": "floating",
+    "partOfSpeech": "v.",
+    "otherMeaning": "漂流；使浮起"
+  },
+  {
+    "term": "mixed signals",
+    "meaning": "含糊或互相矛盾的信号",
+    "match": "signals are mixed",
+    "partOfSpeech": "n. phr.",
+    "otherMeaning": "指言行传递出相互矛盾的信息"
+  },
+  {
+    "term": "stereotype",
+    "meaning": "刻板印象",
+    "match": "stereotype",
+    "partOfSpeech": "n.",
+    "otherMeaning": "也可作动词：对……形成刻板印象"
+  },
+  {
+    "term": "pretend",
+    "meaning": "假装；装作",
+    "match": "pretending",
+    "partOfSpeech": "v.",
+    "otherMeaning": "假扮；装作有某种身份"
+  },
+  {
+    "term": "no duh",
+    "meaning": "那当然；这还用说（口语）",
+    "match": "no duh",
+    "partOfSpeech": "interj. · informal",
+    "otherMeaning": "也可表达：这还用说；明摆着"
+  }
+]

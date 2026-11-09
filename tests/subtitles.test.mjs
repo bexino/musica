@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {parseSrt} from '../src/subtitles.mjs';
+test('actual bilingual lyrics are merged, credits excluded and timestamps preserved',()=>{const lines=parseSrt(readFileSync('attachments/lyrics.srt','utf8'));assert.ok(lines.length>40);assert.equal(lines[0].start,8.096);assert.match(lines[0].chinese,/就像这样/);assert.match(lines[0].english,/like that/);assert.ok(!lines.some(x=>/作词|作曲/.test(x.chinese)))});
+test('empty or invalid subtitle files are handled',()=>{assert.deepEqual(parseSrt(''),[]);assert.deepEqual(parseSrt('bad'),[])});
